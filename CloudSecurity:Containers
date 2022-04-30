@@ -1,0 +1,14 @@
+#Containers
+
+In cloud security when is it appropriate to use containers in cloud deployments an what are the security benefits of doing so?
+
+  In cloud security it is appropriate to use containers when building or to provide a wall of defense to keep the public out. In project 1 I used containers
+  to provide a more secure network environment. In doing so I made the environment only accessible by individuals on my personal networks that knew the direct path to
+  take to get in. This was an appropriate use because it kept other individuals out and only made the project environment accessible by me. The security benefits I 
+  expect out of using containers is to provide a wall of defense by pairing security rules to keep intruders out and accessing my environment. In project 1 I 
+  configured my VM to run containers by using yaml code to download and configure docker. It did this by downloading docker.io, installing pip3, installing the 
+  docker python module, downloading the container and then enabling the docker service. To verify the service was active and running I ran the code $!(sudo docker ps)
+  in doing so it showed that the  docker container was up and running and then I ran $!(sudo docker attach docker_name) to remote into the container. In order to 
+  achieve this same outcome without containers I would need to create more VMs on the network that are only accessible by eachother which is not cost effective or 
+  efficient. However VMS provide a better use for bigger enterprise environments and helps them view their whole network in one place. It also enables them to 
+  efficiently monitor internal security as well as enforce security and compliance.
